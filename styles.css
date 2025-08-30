@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+}
+
+/* Encabezado y navegación */
+.site-header {
+  background: #1763a6;
+  color: white;
+  padding: 15px 20px;
+  max-width: 100%;
+}
+
+.logo {
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  
+}
+.imagen-hover {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  cursor: pointer; /* Añade un cursor de mano para indicar que es interactivo */
+}
+
+.imagen-hover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out; /* Transición suave para el cambio */
+}
+
+.imagen-hover .imagen-secundaria {
+  opacity: 0; /* Oculta la segunda imagen por defecto */
+}
+
+.imagen-hover:hover .imagen-secundaria {
+  opacity: 1; /* Al pasar el cursor, la segunda imagen se hace visible */
+}
+
+.imagen-hover:hover .imagen-principal {
+  opacity: 0; /* Al pasar el cursor, la primera imagen se oculta */
+}
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 20px;
+font-size: 25px;
+ 
+}
+
+.main-nav a:hover {
+  color: #ffdd57;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+.container img {
+    width: 100%;
+    height: 500px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.container h2{
+  text-align: center;
+  align-items: center;
+  font-size: 34px;
+}
+.container p{
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 37px;
+}
+
+/* Títulos */
+h2 {
+  margin-bottom: 15px;
+  color: #1763a6;
+}
+
+h3 {
+  margin: 15px 0;
+  color: #1763a6;
+}
+
+/* Habitaciones */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.room-card {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Listas simples */
+ul {
+  margin: 10px 0 20px 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Pie de página */
+.site-footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.deportes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.deporte-card {
+  background: white;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.deporte-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.deporte-card h3 {
+  margin: 8px 0;
+  color: #1763a6;
+}
