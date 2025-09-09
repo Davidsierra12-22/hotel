@@ -185,6 +185,7 @@ h3 {
   pointer-events: auto;
 }
 
+
 ul {
   margin: 10px 0 20px 20px;
 }
@@ -278,6 +279,33 @@ li {
 }
 
 .deporte-card h3 {
+  margin: 8px 0;
+  color: #1763a6;
+}
+
+/* gastronomia */
+
+.gastronomia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.gastronomia-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+}
+.gastronomia-card img {
+  width: 100%;
+  height: 180px; /* Ajusta este valor según el tamaño de las imágenes de habitaciones */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.gastronomia-card h3 {
   margin: 8px 0;
   color: #1763a6;
 }
